@@ -40,7 +40,7 @@ export default function Page() {
             <div className="hidden md:flex items-center gap-1.5 text-zinc-400 text-xs font-medium">
               <Globe className="w-3.5 h-3.5" /> English
             </div>
-            <button className="px-4 py-1.5 rounded-full border border-[#333] text-white hover:bg-[#111] transition-colors text-xs font-medium">Book a call</button>
+            <button className="hidden sm:block px-4 py-1.5 rounded-full border border-[#333] text-white hover:bg-[#111] transition-colors text-xs font-medium">Book a call</button>
             <div className="flex">
               <button className="px-4 py-1.5 rounded-l-full bg-[#222] text-white hover:bg-[#333] transition-colors text-xs font-medium">Start Project</button>
               <button className="px-2 py-1.5 rounded-r-full bg-[#222] border-l border-[#333] text-white hover:bg-[#333] transition-colors">
@@ -58,9 +58,9 @@ export default function Page() {
           <p className="text-zinc-400 text-base md:text-lg max-w-2xl mb-10 leading-relaxed">
             Get enterprise-grade web applications delivered in record time. Mantha Studio combines strategic design with robust engineering.
           </p>
-          <div className="flex items-center gap-4">
-            <button className="px-6 py-2.5 rounded-full border border-[#333] text-white hover:bg-[#111] transition-colors text-sm font-medium">Book a call</button>
-            <button className="px-6 py-2.5 rounded-full bg-[#222] text-white hover:bg-[#333] transition-colors text-sm font-medium">View Portfolio</button>
+          <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto px-4 sm:px-0">
+            <button className="w-full sm:w-auto px-6 py-2.5 rounded-full border border-[#333] text-white hover:bg-[#111] transition-colors text-sm font-medium">Book a call</button>
+            <button className="w-full sm:w-auto px-6 py-2.5 rounded-full bg-[#222] text-white hover:bg-[#333] transition-colors text-sm font-medium">View Portfolio</button>
           </div>
         </div>
 
@@ -92,7 +92,7 @@ export default function Page() {
         <div className="grid grid-cols-1 md:grid-cols-2 border-b border-[#1c1c1c]">
           
           {/* Cell 1 */}
-          <div className="p-8 md:p-12 border-b md:border-b-0 md:border-r border-[#1c1c1c] flex flex-col relative overflow-hidden group min-h-[500px]">
+          <div className="p-6 md:p-12 border-b md:border-b-0 md:border-r border-[#1c1c1c] flex flex-col relative overflow-hidden group min-h-[500px]">
             <div className="relative z-10 mb-12">
               <h2 className="text-2xl font-medium text-white mb-4 tracking-tight">Robust Full-Stack<br/>Development</h2>
               <p className="text-zinc-400 leading-relaxed max-w-sm text-sm">
@@ -125,7 +125,7 @@ export default function Page() {
           </div>
 
           {/* Cell 2 */}
-          <div className="p-8 md:p-12 flex flex-col relative overflow-hidden group min-h-[500px]">
+          <div className="p-6 md:p-12 flex flex-col relative overflow-hidden group min-h-[500px]">
             <div className="relative z-10 mb-12">
               <h2 className="text-2xl font-medium text-white mb-4 tracking-tight">System Architecture<br/>& Design</h2>
               <p className="text-zinc-400 leading-relaxed max-w-sm text-sm">
@@ -168,7 +168,7 @@ export default function Page() {
         <div className="grid grid-cols-1 md:grid-cols-2 border-b border-[#1c1c1c]">
           
           {/* Cell 3 */}
-          <div className="p-8 md:p-12 border-b md:border-b-0 md:border-r border-[#1c1c1c] flex flex-col relative overflow-hidden min-h-[400px]">
+          <div className="p-6 md:p-12 border-b md:border-b-0 md:border-r border-[#1c1c1c] flex flex-col relative overflow-hidden min-h-[400px]">
             <div className="relative z-10 mb-12">
               <h2 className="text-2xl font-medium text-white mb-4 tracking-tight">Strategic<br/>Consultation</h2>
               <p className="text-zinc-400 leading-relaxed max-w-sm text-sm">
@@ -244,7 +244,7 @@ export default function Page() {
         <div className="grid grid-cols-1 md:grid-cols-2 border-b border-[#1c1c1c]">
           
           {/* Cell 5 */}
-          <div className="p-8 md:p-12 border-b md:border-b-0 md:border-r border-[#1c1c1c] flex flex-col relative overflow-hidden min-h-[400px]">
+          <div className="p-6 md:p-12 border-b md:border-b-0 md:border-r border-[#1c1c1c] flex flex-col relative overflow-hidden min-h-[400px]">
             <div className="relative z-10">
               <h2 className="text-2xl font-medium text-white mb-4 tracking-tight">Seamless End-to-End<br/>Delivery</h2>
               <p className="text-zinc-400 leading-relaxed max-w-sm text-sm">
@@ -275,7 +275,7 @@ export default function Page() {
           </div>
 
           {/* Cell 6 */}
-          <div className="p-8 md:p-12 relative overflow-hidden bg-[#0c0c0c] min-h-[400px] flex items-center justify-center">
+          <div className="p-6 md:p-12 relative overflow-hidden bg-[#0c0c0c] min-h-[400px] flex items-center justify-center">
             {/* Background pattern */}
             <div className="absolute inset-0 opacity-10" style={{
                   backgroundImage: 'radial-gradient(circle at 2px 2px, rgba(255,255,255,0.8) 1px, transparent 0)',
@@ -354,7 +354,7 @@ export default function Page() {
         <div className="grid grid-cols-1 md:grid-cols-2 border-b border-[#1c1c1c]">
           
           {/* Cell 7 */}
-          <div className="p-8 md:p-12 border-b md:border-b-0 md:border-r border-[#1c1c1c] flex flex-col relative overflow-hidden min-h-[400px]">
+          <div className="p-6 md:p-12 border-b md:border-b-0 md:border-r border-[#1c1c1c] flex flex-col relative overflow-hidden min-h-[400px]">
             <div className="relative z-10">
               <h2 className="text-2xl font-medium text-white mb-4 tracking-tight">Iterative<br/>Improvements</h2>
               <p className="text-zinc-400 leading-relaxed max-w-sm text-sm">
@@ -414,7 +414,7 @@ export default function Page() {
         <div className="grid grid-cols-1 md:grid-cols-3 border-b border-[#1c1c1c]">
           
           {/* Testimonial 1 */}
-          <div className="p-8 md:p-10 border-b md:border-b-0 md:border-r border-[#1c1c1c] flex flex-col relative group">
+          <div className="p-6 md:p-10 border-b md:border-b-0 md:border-r border-[#1c1c1c] flex flex-col relative group">
             <div className="mb-6 text-zinc-600 group-hover:text-emerald-500/50 transition-colors">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path d="M14.017 21L16.41 14.592C16.634 13.92 16.75 13.25 16.75 12.58C16.75 11.237 16.29 10.136 15.37 9.276C14.45 8.416 13.25 7.986 11.77 7.986V3C14.45 3 16.634 3.86 18.32 5.58C20.007 7.3 20.85 9.487 20.85 12.14C20.85 13.213 20.664 14.323 20.29 15.47L17.73 21H14.017ZM5.267 21L7.66 14.592C7.884 13.92 8 13.25 8 12.58C8 11.237 7.54 10.136 6.62 9.276C5.7 8.416 4.5 7.986 3.02 7.986V3C5.7 3 7.884 3.86 9.57 5.58C11.257 7.3 12.1 9.487 12.1 12.14C12.1 13.213 11.914 14.323 11.54 15.47L8.98 21H5.267Z" />
@@ -435,7 +435,7 @@ export default function Page() {
           </div>
 
           {/* Testimonial 2 */}
-          <div className="p-8 md:p-10 border-b md:border-b-0 md:border-r border-[#1c1c1c] flex flex-col relative group">
+          <div className="p-6 md:p-10 border-b md:border-b-0 md:border-r border-[#1c1c1c] flex flex-col relative group">
             <div className="mb-6 text-zinc-600 group-hover:text-emerald-500/50 transition-colors">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path d="M14.017 21L16.41 14.592C16.634 13.92 16.75 13.25 16.75 12.58C16.75 11.237 16.29 10.136 15.37 9.276C14.45 8.416 13.25 7.986 11.77 7.986V3C14.45 3 16.634 3.86 18.32 5.58C20.007 7.3 20.85 9.487 20.85 12.14C20.85 13.213 20.664 14.323 20.29 15.47L17.73 21H14.017ZM5.267 21L7.66 14.592C7.884 13.92 8 13.25 8 12.58C8 11.237 7.54 10.136 6.62 9.276C5.7 8.416 4.5 7.986 3.02 7.986V3C5.7 3 7.884 3.86 9.57 5.58C11.257 7.3 12.1 9.487 12.1 12.14C12.1 13.213 11.914 14.323 11.54 15.47L8.98 21H5.267Z" />
@@ -456,7 +456,7 @@ export default function Page() {
           </div>
 
           {/* Testimonial 3 */}
-          <div className="p-8 md:p-10 flex flex-col relative group">
+          <div className="p-6 md:p-10 flex flex-col relative group">
             <div className="mb-6 text-zinc-600 group-hover:text-emerald-500/50 transition-colors">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path d="M14.017 21L16.41 14.592C16.634 13.92 16.75 13.25 16.75 12.58C16.75 11.237 16.29 10.136 15.37 9.276C14.45 8.416 13.25 7.986 11.77 7.986V3C14.45 3 16.634 3.86 18.32 5.58C20.007 7.3 20.85 9.487 20.85 12.14C20.85 13.213 20.664 14.323 20.29 15.47L17.73 21H14.017ZM5.267 21L7.66 14.592C7.884 13.92 8 13.25 8 12.58C8 11.237 7.54 10.136 6.62 9.276C5.7 8.416 4.5 7.986 3.02 7.986V3C5.7 3 7.884 3.86 9.57 5.58C11.257 7.3 12.1 9.487 12.1 12.14C12.1 13.213 11.914 14.323 11.54 15.47L8.98 21H5.267Z" />
@@ -483,7 +483,7 @@ export default function Page() {
       {/* Security Section */}
       <section className="relative max-w-5xl mx-auto mt-24 border-t border-x border-[#1c1c1c] bg-[#0a0a0a] shadow-2xl">
         {/* Header */}
-        <div className="p-8 md:p-12 border-b border-[#1c1c1c]">
+        <div className="p-6 md:p-12 border-b border-[#1c1c1c]">
           <h2 className="text-2xl md:text-3xl font-medium text-white tracking-tight max-w-3xl leading-snug">
             Secure by design. <span className="text-zinc-500">No compromises on performance. Your infrastructure is fortified from day one.</span>
           </h2>
@@ -493,7 +493,7 @@ export default function Page() {
         <div className="grid grid-cols-1 md:grid-cols-2">
           
           {/* Cell 1 */}
-          <div className="p-8 md:p-10 border-b md:border-r border-[#1c1c1c] relative overflow-hidden min-h-[250px] flex flex-col group">
+          <div className="p-6 md:p-10 border-b md:border-r border-[#1c1c1c] relative overflow-hidden min-h-[250px] flex flex-col group">
             <h3 className="text-white font-medium mb-2 relative z-10">Zero-downtime deployments</h3>
             <p className="text-zinc-500 text-sm relative z-10">Seamless updates without interrupting your users. Traffic is routed instantly.</p>
             
@@ -514,7 +514,7 @@ export default function Page() {
           </div>
 
           {/* Cell 2 */}
-          <div className="p-8 md:p-10 border-b border-[#1c1c1c] relative overflow-hidden min-h-[250px] flex flex-col group">
+          <div className="p-6 md:p-10 border-b border-[#1c1c1c] relative overflow-hidden min-h-[250px] flex flex-col group">
             <h3 className="text-white font-medium mb-2 relative z-10">DDoS Protection</h3>
             <p className="text-zinc-500 text-sm relative z-10">Enterprise-grade mitigation at the network edge to keep you online.</p>
             
@@ -540,7 +540,7 @@ export default function Page() {
           </div>
 
           {/* Cell 3 */}
-          <div className="p-8 md:p-10 md:border-r border-[#1c1c1c] relative overflow-hidden min-h-[250px] flex flex-col group">
+          <div className="p-6 md:p-10 border-b md:border-b-0 md:border-r border-[#1c1c1c] relative overflow-hidden min-h-[250px] flex flex-col group">
             <h3 className="text-white font-medium mb-2 relative z-10">End-to-end encrypted</h3>
             <p className="text-zinc-500 text-sm relative z-10">AES-256-GCM and RSA-4096 protect your data in transit and at rest.</p>
             
@@ -561,7 +561,7 @@ export default function Page() {
           </div>
 
           {/* Cell 4 */}
-          <div className="p-8 md:p-10 relative overflow-hidden min-h-[250px] flex flex-col group">
+          <div className="p-6 md:p-10 relative overflow-hidden min-h-[250px] flex flex-col group">
             <h3 className="text-white font-medium mb-2 relative z-10">Compliance Ready</h3>
             <p className="text-zinc-500 text-sm relative z-10">Architecture designed to meet GDPR, HIPAA, and SOC2 standards.</p>
             
@@ -593,7 +593,7 @@ export default function Page() {
 
         {/* CTA Box */}
         <div className="px-6 py-24 md:py-32 flex justify-center relative z-10">
-          <div className="bg-[#18181b] border border-[#27272a] rounded-xl p-10 md:p-14 w-full max-w-3xl shadow-2xl">
+          <div className="bg-[#18181b] border border-[#27272a] rounded-xl p-8 md:p-14 w-full max-w-3xl shadow-2xl">
             <h2 className="text-3xl md:text-4xl font-medium text-white mb-4 tracking-tight">
               Build with Mantha today
             </h2>
@@ -611,14 +611,14 @@ export default function Page() {
 
         {/* Footer */}
         <footer className="border-t border-[#1c1c1c] flex flex-col relative z-10 bg-transparent">
-          <div className="px-8 py-12 border-b border-[#1c1c1c]">
+          <div className="px-6 md:px-8 py-12 border-b border-[#1c1c1c]">
             <p className="text-zinc-500 text-xs leading-relaxed">
               Mantha Studio Inc.<br/>
               45 Lansing St, San Francisco<br/>
               CA 94105
             </p>
           </div>
-          <div className="px-8 py-6 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+          <div className="px-6 md:px-8 py-6 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
             <p className="text-zinc-500 text-xs">
               © 2026 Mantha Studio Inc. All rights reserved.
             </p>
