@@ -52,7 +52,7 @@ export default function Page() {
 
         {/* True Hero Section */}
         <div className="pt-24 pb-20 px-6 flex flex-col items-center text-center relative z-10">
-          <h1 className="text-4xl md:text-6xl lg:text-[64px] font-medium tracking-tight text-white max-w-3xl leading-[1.05] mb-6">
+          <h1 className="text-4xl md:text-5xl lg:text-[52px] font-medium tracking-tight text-white max-w-3xl leading-[1.1] mb-6">
             Web development agency<br/>that scales your business
           </h1>
           <p className="text-zinc-400 text-base md:text-lg max-w-2xl mb-10 leading-relaxed">
