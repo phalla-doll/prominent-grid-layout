@@ -513,7 +513,7 @@ export default function Page() {
       </main>
 
       {/* Security Section */}
-      <section className="relative max-w-5xl mx-auto my-24 border border-[#1c1c1c] bg-[#0a0a0a] shadow-2xl">
+      <section className="relative max-w-5xl mx-auto mt-24 border-t border-x border-[#1c1c1c] bg-[#0a0a0a] shadow-2xl">
         {/* Header */}
         <div className="p-8 md:p-12 border-b border-[#1c1c1c]">
           <h2 className="text-2xl md:text-3xl font-medium text-white tracking-tight max-w-3xl leading-snug">
@@ -614,6 +614,56 @@ export default function Page() {
 
         </div>
       </section>
+
+      {/* Final CTA & Footer */}
+      <div className="relative max-w-5xl mx-auto border-x border-b border-[#1c1c1c] bg-[#0a0a0a] overflow-hidden shadow-2xl mb-24">
+        
+        {/* Watermark text */}
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 text-[25vw] md:text-[280px] font-bold text-white/[0.02] tracking-tighter leading-none pointer-events-none select-none z-0 flex items-end justify-center w-full">
+          <span className="translate-y-[20%]">Mantha.</span>
+        </div>
+
+        {/* CTA Box */}
+        <div className="px-6 py-24 md:py-32 flex justify-center relative z-10">
+          <div className="bg-[#18181b] border border-[#27272a] rounded-xl p-10 md:p-14 w-full max-w-3xl shadow-2xl">
+            <h2 className="text-3xl md:text-4xl font-medium text-white mb-4 tracking-tight">
+              Build with Mantha today
+            </h2>
+            <p className="text-zinc-400 text-sm md:text-base mb-8 max-w-md">
+              Fewer bottlenecks. Better architecture. Focus on scaling your business.
+            </p>
+            
+            <div className="inline-flex items-center shadow-lg">
+              <button className="px-5 py-2.5 rounded-l-full bg-[#2a2a2a] text-white hover:bg-[#333] transition-colors text-sm font-medium h-10">
+                Start Project
+              </button>
+              <button className="px-3 py-2.5 rounded-r-full bg-zinc-200 text-black hover:bg-white transition-colors h-10 flex items-center justify-center">
+                <ChevronDown className="w-4 h-4" />
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/* Footer */}
+        <footer className="border-t border-[#1c1c1c] flex flex-col relative z-10 bg-transparent">
+          <div className="px-8 py-12 border-b border-[#1c1c1c]">
+            <p className="text-zinc-500 text-xs leading-relaxed">
+              Mantha Studio Inc.<br/>
+              45 Lansing St, San Francisco<br/>
+              CA 94105
+            </p>
+          </div>
+          <div className="px-8 py-6 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+            <p className="text-zinc-500 text-xs">
+              © 2026 Mantha Studio Inc. All rights reserved.
+            </p>
+            <div className="flex gap-4 text-zinc-500 text-xs font-medium">
+              <a href="#" className="hover:text-zinc-300 transition-colors">Terms of Service</a>
+              <a href="#" className="hover:text-zinc-300 transition-colors">Privacy Policy</a>
+            </div>
+          </div>
+        </footer>
+      </div>
     </div>
   );
 }
