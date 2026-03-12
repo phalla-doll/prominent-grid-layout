@@ -588,7 +588,14 @@ export default function Page() {
 
         {/* CTA Box */}
         <div className="px-6 py-24 md:py-32 flex justify-center relative z-10">
-          <div className="bg-[#18181b] border border-[#27272a] rounded-xl p-8 md:p-14 w-full max-w-3xl shadow-2xl">
+          <div className="bg-[#050505] border border-[#1c1c1c] p-8 md:p-14 w-full max-w-3xl shadow-2xl relative">
+            {/* Corner accents */}
+            <div className="absolute -top-[1px] -left-[1px] w-2 h-2 border-t border-l border-zinc-500"></div>
+            <div className="absolute -top-[1px] -right-[1px] w-2 h-2 border-t border-r border-zinc-500"></div>
+            <div className="absolute -bottom-[1px] -left-[1px] w-2 h-2 border-b border-l border-zinc-500"></div>
+            <div className="absolute -bottom-[1px] -right-[1px] w-2 h-2 border-b border-r border-zinc-500"></div>
+            {/* Subtle inner border */}
+            <div className="absolute inset-2 border border-[#1c1c1c]/50 pointer-events-none"></div>
             <h2 className="text-3xl md:text-4xl font-medium text-white mb-4 tracking-tight">
               Build with Mantha today
             </h2>
