@@ -65,9 +65,58 @@ export default function Page() {
           </div>
         </div>
 
+        {/* Header Row - Impact */}
+        <div className="flex justify-between items-center px-6 py-4 border-b border-[#1c1c1c] font-mono text-[10px] tracking-[0.2em] text-zinc-500 uppercase">
+          <span>[01] Proven Impact</span>
+          <span>/ By The Numbers</span>
+        </div>
+
+        {/* Metrics Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 border-b border-[#1c1c1c]">
+          {/* Metric 1 */}
+          <div className="p-8 md:p-10 border-b lg:border-b-0 md:border-r border-[#1c1c1c] flex flex-col relative group">
+            <div className="absolute top-0 right-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity">
+              <div className="w-2 h-2 rounded-full bg-emerald-500 shadow-[0_0_10px_rgba(16,185,129,0.5)]"></div>
+            </div>
+            <div className="text-zinc-500 font-mono text-xs mb-6">01 // Scale</div>
+            <div className="text-4xl md:text-5xl font-medium text-white tracking-tighter mb-2">$2.4B+</div>
+            <div className="text-sm text-zinc-400 leading-relaxed">Client revenue generated through our scalable architectures.</div>
+          </div>
+          
+          {/* Metric 2 */}
+          <div className="p-8 md:p-10 border-b lg:border-b-0 lg:border-r border-[#1c1c1c] flex flex-col relative group">
+            <div className="absolute top-0 right-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity">
+              <div className="w-2 h-2 rounded-full bg-emerald-500 shadow-[0_0_10px_rgba(16,185,129,0.5)]"></div>
+            </div>
+            <div className="text-zinc-500 font-mono text-xs mb-6">02 // Performance</div>
+            <div className="text-4xl md:text-5xl font-medium text-white tracking-tighter mb-2">&lt; 50ms</div>
+            <div className="text-sm text-zinc-400 leading-relaxed">Average global latency for our deployed applications.</div>
+          </div>
+          
+          {/* Metric 3 */}
+          <div className="p-8 md:p-10 border-b md:border-b-0 md:border-r border-[#1c1c1c] flex flex-col relative group">
+            <div className="absolute top-0 right-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity">
+              <div className="w-2 h-2 rounded-full bg-emerald-500 shadow-[0_0_10px_rgba(16,185,129,0.5)]"></div>
+            </div>
+            <div className="text-zinc-500 font-mono text-xs mb-6">03 // Velocity</div>
+            <div className="text-4xl md:text-5xl font-medium text-white tracking-tighter mb-2">10x</div>
+            <div className="text-sm text-zinc-400 leading-relaxed">Faster time-to-market compared to industry averages.</div>
+          </div>
+          
+          {/* Metric 4 */}
+          <div className="p-8 md:p-10 border-none flex flex-col relative group">
+            <div className="absolute top-0 right-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity">
+              <div className="w-2 h-2 rounded-full bg-emerald-500 shadow-[0_0_10px_rgba(16,185,129,0.5)]"></div>
+            </div>
+            <div className="text-zinc-500 font-mono text-xs mb-6">04 // Reliability</div>
+            <div className="text-4xl md:text-5xl font-medium text-white tracking-tighter mb-2">99.99%</div>
+            <div className="text-sm text-zinc-400 leading-relaxed">Guaranteed uptime for mission-critical enterprise systems.</div>
+          </div>
+        </div>
+
         {/* Header Row 1 */}
         <div className="flex justify-between items-center px-6 py-4 border-b border-[#1c1c1c] font-mono text-[10px] tracking-[0.2em] text-zinc-500 uppercase">
-          <span>[01] Mantha Studio</span>
+          <span>[02] Mantha Studio</span>
           <span>/ Expertise</span>
         </div>
 
@@ -229,7 +278,7 @@ export default function Page() {
 
         {/* Header Row 2 */}
         <div className="flex justify-between items-center px-6 py-4 border-b border-[#1c1c1c] font-mono text-[10px] tracking-[0.2em] text-zinc-500 uppercase">
-          <span>[02] The Process</span>
+          <span>[03] The Process</span>
           <span>/ Workflow</span>
         </div>
 
@@ -339,7 +388,7 @@ export default function Page() {
 
         {/* Header Row 4 */}
         <div className="flex justify-between items-center px-6 py-4 border-b border-[#1c1c1c] font-mono text-[10px] tracking-[0.2em] text-zinc-500 uppercase">
-          <span>[03] Continuous Evolution</span>
+          <span>[04] Continuous Evolution</span>
           <span>/ Agile</span>
         </div>
 
@@ -399,7 +448,7 @@ export default function Page() {
 
         {/* Header Row 5 */}
         <div className="flex justify-between items-center px-6 py-4 border-b border-[#1c1c1c] font-mono text-[10px] tracking-[0.2em] text-zinc-500 uppercase">
-          <span>[04] Client Success</span>
+          <span>[05] Client Success</span>
           <span>/ Testimonials</span>
         </div>
 
