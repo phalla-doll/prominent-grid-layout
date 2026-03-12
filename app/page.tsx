@@ -3,6 +3,7 @@ import { Sparkles, ArrowRight, Zap, Search, LayoutGrid, ChevronLeft, ChevronRigh
 import Image from 'next/image';
 import AsciiArt from '@/components/AsciiArt';
 import AnimatedProcessSteps from '@/components/AnimatedProcessSteps';
+import TestimonialCarousel from '@/components/TestimonialCarousel';
 
 export default function Page() {
   return (
@@ -539,72 +540,7 @@ export default function Page() {
         </div>
 
         {/* Testimonials Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 border-b border-[#1c1c1c]">
-          
-          {/* Testimonial 1 */}
-          <div className="p-6 md:p-10 border-b md:border-b-0 md:border-r border-[#1c1c1c] flex flex-col relative group">
-            <div className="mb-6 text-zinc-600 group-hover:text-emerald-500/50 transition-colors">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path d="M14.017 21L16.41 14.592C16.634 13.92 16.75 13.25 16.75 12.58C16.75 11.237 16.29 10.136 15.37 9.276C14.45 8.416 13.25 7.986 11.77 7.986V3C14.45 3 16.634 3.86 18.32 5.58C20.007 7.3 20.85 9.487 20.85 12.14C20.85 13.213 20.664 14.323 20.29 15.47L17.73 21H14.017ZM5.267 21L7.66 14.592C7.884 13.92 8 13.25 8 12.58C8 11.237 7.54 10.136 6.62 9.276C5.7 8.416 4.5 7.986 3.02 7.986V3C5.7 3 7.884 3.86 9.57 5.58C11.257 7.3 12.1 9.487 12.1 12.14C12.1 13.213 11.914 14.323 11.54 15.47L8.98 21H5.267Z" />
-              </svg>
-            </div>
-            <p className="text-zinc-300 text-sm leading-relaxed mb-8 flex-grow">
-              &quot;Mantha Studio completely transformed our infrastructure. We went from struggling with scaling issues to handling 10x traffic without a single hiccup. Their engineering depth is unmatched.&quot;
-            </p>
-            <div className="flex items-center gap-3 mt-auto">
-              <div className="w-8 h-8 rounded bg-[#111] border border-[#222] flex items-center justify-center overflow-hidden">
-                <Image src="https://picsum.photos/seed/acme/100/100" alt="Acme Corp" width={32} height={32} className="opacity-80 grayscale" />
-              </div>
-              <div>
-                <div className="text-white text-xs font-medium">Sarah Jenkins</div>
-                <div className="text-zinc-500 text-[10px] font-mono mt-0.5">CTO, Acme Corp</div>
-              </div>
-            </div>
-          </div>
-
-          {/* Testimonial 2 */}
-          <div className="p-6 md:p-10 border-b md:border-b-0 md:border-r border-[#1c1c1c] flex flex-col relative group">
-            <div className="mb-6 text-zinc-600 group-hover:text-emerald-500/50 transition-colors">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path d="M14.017 21L16.41 14.592C16.634 13.92 16.75 13.25 16.75 12.58C16.75 11.237 16.29 10.136 15.37 9.276C14.45 8.416 13.25 7.986 11.77 7.986V3C14.45 3 16.634 3.86 18.32 5.58C20.007 7.3 20.85 9.487 20.85 12.14C20.85 13.213 20.664 14.323 20.29 15.47L17.73 21H14.017ZM5.267 21L7.66 14.592C7.884 13.92 8 13.25 8 12.58C8 11.237 7.54 10.136 6.62 9.276C5.7 8.416 4.5 7.986 3.02 7.986V3C5.7 3 7.884 3.86 9.57 5.58C11.257 7.3 12.1 9.487 12.1 12.14C12.1 13.213 11.914 14.323 11.54 15.47L8.98 21H5.267Z" />
-              </svg>
-            </div>
-            <p className="text-zinc-300 text-sm leading-relaxed mb-8 flex-grow">
-              &quot;The speed at which they delivered our MVP was staggering. Not only was it fast, but the code quality and architecture set us up perfectly for our Series A.&quot;
-            </p>
-            <div className="flex items-center gap-3 mt-auto">
-              <div className="w-8 h-8 rounded bg-[#111] border border-[#222] flex items-center justify-center overflow-hidden">
-                <Image src="https://picsum.photos/seed/nexus/100/100" alt="Nexus" width={32} height={32} className="opacity-80 grayscale" />
-              </div>
-              <div>
-                <div className="text-white text-xs font-medium">David Chen</div>
-                <div className="text-zinc-500 text-[10px] font-mono mt-0.5">Founder, Nexus</div>
-              </div>
-            </div>
-          </div>
-
-          {/* Testimonial 3 */}
-          <div className="p-6 md:p-10 flex flex-col relative group">
-            <div className="mb-6 text-zinc-600 group-hover:text-emerald-500/50 transition-colors">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path d="M14.017 21L16.41 14.592C16.634 13.92 16.75 13.25 16.75 12.58C16.75 11.237 16.29 10.136 15.37 9.276C14.45 8.416 13.25 7.986 11.77 7.986V3C14.45 3 16.634 3.86 18.32 5.58C20.007 7.3 20.85 9.487 20.85 12.14C20.85 13.213 20.664 14.323 20.29 15.47L17.73 21H14.017ZM5.267 21L7.66 14.592C7.884 13.92 8 13.25 8 12.58C8 11.237 7.54 10.136 6.62 9.276C5.7 8.416 4.5 7.986 3.02 7.986V3C5.7 3 7.884 3.86 9.57 5.58C11.257 7.3 12.1 9.487 12.1 12.14C12.1 13.213 11.914 14.323 11.54 15.47L8.98 21H5.267Z" />
-              </svg>
-            </div>
-            <p className="text-zinc-300 text-sm leading-relaxed mb-8 flex-grow">
-              &quot;Working with Mantha feels like having an elite in-house engineering team. Their attention to detail in both UX and backend performance is rare to find.&quot;
-            </p>
-            <div className="flex items-center gap-3 mt-auto">
-              <div className="w-8 h-8 rounded bg-[#111] border border-[#222] flex items-center justify-center overflow-hidden">
-                <Image src="https://picsum.photos/seed/lumina/100/100" alt="Lumina" width={32} height={32} className="opacity-80 grayscale" />
-              </div>
-              <div>
-                <div className="text-white text-xs font-medium">Elena Rodriguez</div>
-                <div className="text-zinc-500 text-[10px] font-mono mt-0.5">VP Product, Lumina</div>
-              </div>
-            </div>
-          </div>
-
-        </div>
+        <TestimonialCarousel />
 
       </main>
 
