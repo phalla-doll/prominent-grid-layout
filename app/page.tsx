@@ -4,6 +4,7 @@ import Image from 'next/image';
 import AsciiArt from '@/components/AsciiArt';
 import AnimatedProcessSteps from '@/components/AnimatedProcessSteps';
 import TestimonialCarousel from '@/components/TestimonialCarousel';
+import Logo from '@/components/Logo';
 
 export default function Page() {
   return (
@@ -27,9 +28,12 @@ export default function Page() {
         
         {/* Navbar */}
         <nav className="sticky top-0 flex items-center justify-between px-6 py-4 border-b border-[#1c1c1c] text-sm z-50 bg-[#0a0a0a]/90 backdrop-blur-md">
-          <div className="flex flex-col items-end leading-none cursor-pointer">
-            <span className="font-bold text-white text-lg tracking-tight">Mantha</span>
-            <span className="font-mono text-[9px] tracking-[0.2em] text-zinc-500 uppercase mt-[2px]">Studio</span>
+          <div className="flex items-center gap-3 cursor-pointer">
+            <Logo className="w-8 h-8 text-white" />
+            <div className="flex flex-col leading-none">
+              <span className="font-bold text-white text-lg tracking-tight">Mantha</span>
+              <span className="font-mono text-[9px] tracking-[0.2em] text-zinc-500 uppercase mt-[2px]">Studio</span>
+            </div>
           </div>
           <div className="hidden md:flex items-center gap-8 text-zinc-400 text-xs font-medium">
             <a href="#" className="text-white">Home</a>
@@ -682,8 +686,15 @@ export default function Page() {
 
         {/* Footer */}
         <footer className="border-t border-[#1c1c1c] flex flex-col relative z-10 bg-transparent">
-          <div className="px-6 md:px-8 py-12 border-b border-[#1c1c1c]">
-            <p className="text-zinc-500 text-xs leading-relaxed">
+          <div className="px-6 md:px-8 py-12 border-b border-[#1c1c1c] flex flex-col md:flex-row justify-between items-start gap-8">
+            <div className="flex items-center gap-3">
+              <Logo className="w-10 h-10 text-zinc-500" />
+              <div className="flex flex-col leading-none">
+                <span className="font-bold text-zinc-400 text-xl tracking-tight">Mantha</span>
+                <span className="font-mono text-[10px] tracking-[0.2em] text-zinc-600 uppercase mt-[2px]">Studio</span>
+              </div>
+            </div>
+            <p className="text-zinc-500 text-xs leading-relaxed md:text-right">
               Mantha Studio Inc.<br/>
               45 Lansing St, San Francisco<br/>
               CA 94105
