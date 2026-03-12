@@ -93,20 +93,20 @@ export default function TestimonialCarousel() {
       </div>
       
       {/* Navigation Row */}
-      <div className="flex justify-end border-t border-[#1c1c1c]">
+      <div className="flex justify-end border-t border-[#1c1c1c] h-[47px]">
         <button 
           onClick={() => scroll('left')} 
-          className="p-4 border-l border-[#1c1c1c] hover:bg-[#111] transition-colors text-zinc-400 hover:text-white outline-none focus:bg-[#111]"
+          className="w-[47px] h-full flex items-center justify-center border-l border-[#1c1c1c] hover:bg-[#111] transition-colors text-zinc-400 hover:text-white outline-none focus:bg-[#111]"
           aria-label="Previous testimonial"
         >
-          <ChevronLeft size={20} />
+          <ChevronLeft size={18} />
         </button>
         <button 
           onClick={() => scroll('right')} 
-          className="p-4 border-l border-[#1c1c1c] hover:bg-[#111] transition-colors text-zinc-400 hover:text-white outline-none focus:bg-[#111]"
+          className="w-[47px] h-full flex items-center justify-center border-l border-[#1c1c1c] hover:bg-[#111] transition-colors text-zinc-400 hover:text-white outline-none focus:bg-[#111]"
           aria-label="Next testimonial"
         >
-          <ChevronRight size={20} />
+          <ChevronRight size={18} />
         </button>
       </div>
     </div>
