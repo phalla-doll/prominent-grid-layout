@@ -25,11 +25,9 @@ export default function Page() {
         
         {/* Navbar */}
         <nav className="sticky top-0 flex items-center justify-between px-6 py-4 border-b border-[#1c1c1c] text-sm z-50 bg-[#0a0a0a]/90 backdrop-blur-md">
-          <div className="flex items-center gap-2 font-medium text-white text-lg tracking-tight">
-            <div className="w-5 h-5 bg-emerald-500 rounded-md flex items-center justify-center">
-              <div className="w-2 h-2 bg-black rounded-sm"></div>
-            </div>
-            Mantha
+          <div className="flex flex-col items-end leading-none cursor-pointer">
+            <span className="font-bold text-white text-lg tracking-tight">Mantha</span>
+            <span className="font-mono text-[9px] tracking-[0.2em] text-zinc-500 uppercase mt-[2px]">Studio</span>
           </div>
           <div className="hidden md:flex items-center gap-8 text-zinc-400 text-xs font-medium">
             <a href="#" className="text-white">Home</a>
