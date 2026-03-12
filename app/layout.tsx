@@ -5,8 +5,11 @@ import './globals.css'; // Global styles
 const mono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-mono' });
 
 export const metadata: Metadata = {
-  title: 'Grid Layout Design',
-  description: 'A dark-themed landing page section with prominent grid lines and bento-box layout.',
+  title: 'Mantha Studio',
+  description: 'Get enterprise-grade web applications delivered in record time. Mantha Studio combines strategic design with robust engineering.',
+  icons: {
+    icon: '/icon.svg',
+  },
 };
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
