@@ -54,12 +54,9 @@ export default function Page() {
           <h1 className="text-4xl md:text-6xl lg:text-[64px] font-medium tracking-tight text-white max-w-3xl leading-[1.05] mb-6">
             Web development agency<br/>that scales your business
           </h1>
-          <p className="text-zinc-400 text-base md:text-lg max-w-2xl mb-8 leading-relaxed">
+          <p className="text-zinc-400 text-base md:text-lg max-w-2xl mb-10 leading-relaxed">
             Get enterprise-grade web applications delivered in record time. Mantha Studio combines strategic design with robust engineering.
           </p>
-          <div className="flex items-center gap-2 text-[11px] text-zinc-500 mb-10 font-medium">
-            Backed by <div className="w-4 h-4 bg-[#ff6600] text-white flex items-center justify-center font-bold rounded-sm text-[10px]">Y</div> Combinator
-          </div>
           <div className="flex items-center gap-4">
             <button className="px-6 py-2.5 rounded-full border border-[#333] text-white hover:bg-[#111] transition-colors text-sm font-medium">Book a call</button>
             <div className="flex">
