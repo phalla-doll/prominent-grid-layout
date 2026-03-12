@@ -1,1 +1,7 @@
 @import "tailwindcss";
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,300,400,400i,500i,700i&f[]=zodiak@300,400,500,700,900,300i,400i,500i,700i,900i&display=swap');
+
+@theme {
+  --font-sans: "Satoshi", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-serif: "Zodiak", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
