@@ -448,7 +448,109 @@ export default function Page() {
 
         {/* Header Row 5 */}
         <div className="flex justify-between items-center px-6 py-4 border-b border-[#1c1c1c] font-mono text-[10px] tracking-[0.2em] text-zinc-500 uppercase">
-          <span>[05] Client Success</span>
+          <span>[05] Selected Work</span>
+          <span>/ Case Studies</span>
+        </div>
+
+        {/* Case Studies Container */}
+        <div className="flex flex-col border-b border-[#1c1c1c]">
+          {/* Case Study 1 */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 border-b border-[#1c1c1c] last:border-b-0">
+            {/* Visual Side */}
+            <div className="p-6 md:p-10 border-b lg:border-b-0 lg:border-r border-[#1c1c1c] bg-[#050505] flex items-center justify-center relative overflow-hidden group">
+              <div className="absolute inset-0 bg-gradient-to-br from-emerald-900/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+              <div className="relative w-full aspect-video border border-[#1c1c1c] bg-[#0a0a0a] overflow-hidden flex items-center justify-center shadow-2xl">
+                 {/* Abstract visual */}
+                 <div className="w-3/4 h-3/4 border border-zinc-800 rounded relative bg-[#050505]">
+                   <div className="absolute top-4 left-4 right-4 h-4 border-b border-zinc-800 flex gap-2">
+                     <div className="w-2 h-2 rounded-full bg-zinc-700"></div>
+                     <div className="w-2 h-2 rounded-full bg-zinc-700"></div>
+                   </div>
+                   <div className="absolute top-12 left-4 bottom-4 right-1/2 border-r border-zinc-800"></div>
+                   <div className="absolute top-1/2 left-1/2 right-4 h-px bg-emerald-500/50 shadow-[0_0_15px_rgba(16,185,129,0.8)]"></div>
+                   <div className="absolute top-1/4 right-8 w-8 h-8 rounded-full border border-emerald-500/30 flex items-center justify-center">
+                     <div className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></div>
+                   </div>
+                 </div>
+              </div>
+            </div>
+            {/* Content Side */}
+            <div className="p-8 md:p-12 lg:p-16 flex flex-col justify-center bg-[#0a0a0a]">
+              <div className="flex items-center gap-3 mb-6">
+                <span className="px-2 py-1 border border-[#333] rounded text-[10px] font-mono text-zinc-400 uppercase">Fintech</span>
+                <span className="px-2 py-1 border border-[#333] rounded text-[10px] font-mono text-zinc-400 uppercase">Architecture</span>
+              </div>
+              <h3 className="text-2xl md:text-3xl font-medium text-white mb-10 tracking-tight">Global Payment Gateway</h3>
+              
+              <div className="space-y-8">
+                <div>
+                  <h4 className="text-[10px] font-mono text-zinc-500 uppercase mb-3 tracking-[0.1em]">The Problem</h4>
+                  <p className="text-sm text-zinc-400 leading-relaxed">Legacy monolithic infrastructure was unable to handle transaction spikes during peak trading hours, resulting in timeouts and lost revenue.</p>
+                </div>
+                <div>
+                  <h4 className="text-[10px] font-mono text-zinc-500 uppercase mb-3 tracking-[0.1em]">The Solution</h4>
+                  <p className="text-sm text-zinc-400 leading-relaxed">Migrated to a distributed microservices architecture using Go and Kafka, with a high-performance Next.js dashboard for real-time monitoring.</p>
+                </div>
+                <div className="p-4 border border-emerald-500/20 bg-emerald-500/5 rounded">
+                  <h4 className="text-[10px] font-mono text-emerald-500 uppercase mb-2 tracking-[0.1em]">The Result</h4>
+                  <p className="text-sm text-zinc-300 leading-relaxed">Achieved 10x transaction throughput with zero downtime during peak loads. Reduced infrastructure costs by 40%.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Case Study 2 */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 border-b border-[#1c1c1c] last:border-b-0">
+            {/* Content Side (Flipped for alternating layout) */}
+            <div className="p-8 md:p-12 lg:p-16 flex flex-col justify-center bg-[#0a0a0a] order-2 lg:order-1">
+              <div className="flex items-center gap-3 mb-6">
+                <span className="px-2 py-1 border border-[#333] rounded text-[10px] font-mono text-zinc-400 uppercase">E-Commerce</span>
+                <span className="px-2 py-1 border border-[#333] rounded text-[10px] font-mono text-zinc-400 uppercase">Headless</span>
+              </div>
+              <h3 className="text-2xl md:text-3xl font-medium text-white mb-10 tracking-tight">Lumina Direct-to-Consumer</h3>
+              
+              <div className="space-y-8">
+                <div>
+                  <h4 className="text-[10px] font-mono text-zinc-500 uppercase mb-3 tracking-[0.1em]">The Problem</h4>
+                  <p className="text-sm text-zinc-400 leading-relaxed">Slow page load times and a rigid CMS were causing high cart abandonment rates and limiting the marketing team&apos;s ability to launch campaigns.</p>
+                </div>
+                <div>
+                  <h4 className="text-[10px] font-mono text-zinc-500 uppercase mb-3 tracking-[0.1em]">The Solution</h4>
+                  <p className="text-sm text-zinc-400 leading-relaxed">Implemented a headless commerce approach using Next.js, Shopify Storefront API, and Edge caching for sub-second page transitions.</p>
+                </div>
+                <div className="p-4 border border-emerald-500/20 bg-emerald-500/5 rounded">
+                  <h4 className="text-[10px] font-mono text-emerald-500 uppercase mb-2 tracking-[0.1em]">The Result</h4>
+                  <p className="text-sm text-zinc-300 leading-relaxed">Increased conversion rate by 42%. Average page load time dropped from 3.8s to 0.8s globally.</p>
+                </div>
+              </div>
+            </div>
+            {/* Visual Side */}
+            <div className="p-6 md:p-10 border-b lg:border-b-0 lg:border-l border-[#1c1c1c] bg-[#050505] flex items-center justify-center relative overflow-hidden group order-1 lg:order-2">
+              <div className="absolute inset-0 bg-gradient-to-bl from-emerald-900/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+              <div className="relative w-full aspect-video border border-[#1c1c1c] bg-[#0a0a0a] overflow-hidden flex items-center justify-center shadow-2xl">
+                 {/* Abstract visual */}
+                 <div className="w-3/4 h-3/4 border border-zinc-800 rounded relative overflow-hidden bg-[#050505]">
+                   <div className="absolute top-0 left-0 right-0 h-1/2 bg-zinc-900/50 border-b border-zinc-800 flex items-center justify-center">
+                     <div className="w-16 h-16 border border-zinc-700 rounded-full flex items-center justify-center">
+                       <div className="w-8 h-8 border border-zinc-600 rounded-full"></div>
+                     </div>
+                   </div>
+                   <div className="absolute bottom-6 left-6 right-6 h-1/4 flex gap-4">
+                     <div className="flex-1 border border-zinc-800 rounded bg-zinc-900/30"></div>
+                     <div className="flex-1 border border-zinc-800 rounded bg-zinc-900/30"></div>
+                     <div className="flex-1 border border-emerald-500/30 rounded bg-emerald-500/10 shadow-[0_0_15px_rgba(16,185,129,0.15)] relative overflow-hidden">
+                       <div className="absolute inset-0 bg-emerald-400/20 animate-pulse"></div>
+                     </div>
+                   </div>
+                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Header Row 6 */}
+        <div className="flex justify-between items-center px-6 py-4 border-b border-[#1c1c1c] font-mono text-[10px] tracking-[0.2em] text-zinc-500 uppercase">
+          <span>[06] Client Success</span>
           <span>/ Testimonials</span>
         </div>
 
