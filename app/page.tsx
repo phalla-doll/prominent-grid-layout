@@ -1,6 +1,7 @@
 import React from 'react';
 import { Sparkles, ArrowRight, Zap, Search, LayoutGrid, ChevronLeft, ChevronRight, Code, Shield, Globe, Cpu, ChevronDown, Wifi, SlidersHorizontal } from 'lucide-react';
 import Image from 'next/image';
+import AsciiArt from '@/components/AsciiArt';
 
 export default function Page() {
   return (
@@ -85,17 +86,8 @@ export default function Page() {
               </div>
             </div>
             
-            {/* Image with dotted overlay */}
-            <Image 
-              src="https://picsum.photos/seed/landscape3/1200/600" 
-              alt="Desktop Wallpaper" 
-              fill
-              className="object-cover"
-            />
-            <div className="absolute inset-0" style={{
-              backgroundImage: 'radial-gradient(circle at 1px 1px, rgba(0,0,0,0.4) 1px, transparent 0)',
-              backgroundSize: '3px 3px'
-            }}></div>
+            {/* Live ASCII Art Animation */}
+            <AsciiArt />
           </div>
         </div>
 
