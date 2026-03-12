@@ -59,12 +59,7 @@ export default function Page() {
           </p>
           <div className="flex items-center gap-4">
             <button className="px-6 py-2.5 rounded-full border border-[#333] text-white hover:bg-[#111] transition-colors text-sm font-medium">Book a call</button>
-            <div className="flex">
-              <button className="px-6 py-2.5 rounded-l-full bg-[#222] text-white hover:bg-[#333] transition-colors text-sm font-medium">View Portfolio</button>
-              <button className="px-3 py-2.5 rounded-r-full bg-[#222] border-l border-[#333] text-white hover:bg-[#333] transition-colors">
-                <ChevronDown className="w-4 h-4" />
-              </button>
-            </div>
+            <button className="px-6 py-2.5 rounded-full bg-[#222] text-white hover:bg-[#333] transition-colors text-sm font-medium">View Portfolio</button>
           </div>
         </div>
 
@@ -634,11 +629,8 @@ export default function Page() {
             </p>
             
             <div className="inline-flex items-center shadow-lg">
-              <button className="px-5 py-2.5 rounded-l-full bg-[#2a2a2a] text-white hover:bg-[#333] transition-colors text-sm font-medium h-10">
+              <button className="px-6 py-2.5 rounded-full bg-[#2a2a2a] text-white hover:bg-[#333] transition-colors text-sm font-medium h-10">
                 Start Project
-              </button>
-              <button className="px-3 py-2.5 rounded-r-full bg-zinc-200 text-black hover:bg-white transition-colors h-10 flex items-center justify-center">
-                <ChevronDown className="w-4 h-4" />
               </button>
             </div>
           </div>
