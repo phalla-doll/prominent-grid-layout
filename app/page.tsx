@@ -299,7 +299,170 @@ export default function Page() {
 
         </div>
 
+        {/* Header Row 4 */}
+        <div className="flex justify-between items-center px-6 py-4 border-b border-[#1c1c1c] font-mono text-[10px] tracking-[0.2em] text-zinc-500 uppercase">
+          <span>[03] Continuous Evolution</span>
+          <span>/ Agile</span>
+        </div>
+
+        {/* Bento Grid Row 4 */}
+        <div className="grid grid-cols-1 md:grid-cols-2 border-b border-[#1c1c1c]">
+          
+          {/* Cell 7 */}
+          <div className="p-8 md:p-12 border-b md:border-b-0 md:border-r border-[#1c1c1c] flex flex-col relative overflow-hidden min-h-[400px]">
+            <div className="relative z-10">
+              <h2 className="text-2xl font-medium text-white mb-4 tracking-tight">Iterative<br/>Improvements</h2>
+              <p className="text-zinc-400 leading-relaxed max-w-sm text-sm">
+                We don&apos;t just launch and leave. We continuously monitor, optimize, and ship new features to keep you ahead of the curve.
+              </p>
+            </div>
+          </div>
+
+          {/* Cell 8 */}
+          <div className="relative min-h-[400px] overflow-hidden group bg-[#050a15] flex items-center justify-center">
+             {/* Blue dotted pattern */}
+             <div className="absolute inset-0" style={{
+                  backgroundImage: 'radial-gradient(circle at 1px 1px, rgba(59,130,246,0.2) 1px, transparent 0)',
+                  backgroundSize: '8px 8px'
+                }}></div>
+             
+             {/* Floating UI */}
+             <div className="relative z-20 flex flex-col items-center gap-4 w-full px-8">
+                {/* Card 1 */}
+                <div className="bg-[#0a1128]/90 backdrop-blur-xl border border-blue-500/20 rounded-xl p-4 shadow-2xl w-full max-w-xs transform -translate-x-4 transition-transform group-hover:-translate-y-1 duration-500">
+                  <div className="flex items-center gap-2 mb-2">
+                    <div className="w-2 h-2 rounded-full bg-zinc-500"></div>
+                    <span className="text-zinc-300 text-xs font-medium">Initial Release</span>
+                  </div>
+                  <p className="text-zinc-500 text-[10px]">Core architecture and basic auth.</p>
+                </div>
+                
+                {/* Connector */}
+                <div className="flex flex-col items-center text-blue-400/60 text-[10px] font-mono">
+                  <div className="w-px h-6 bg-blue-500/30"></div>
+                  <div className="flex items-center gap-2 my-1 bg-blue-500/10 px-2 py-1 rounded-full border border-blue-500/20">
+                    <Zap className="w-3 h-3" /> Feature shipped
+                  </div>
+                  <div className="w-px h-6 bg-blue-500/30"></div>
+                </div>
+                
+                {/* Card 2 */}
+                <div className="bg-[#0a1128]/90 backdrop-blur-xl border border-blue-500/40 rounded-xl p-4 shadow-[0_0_30px_rgba(59,130,246,0.15)] w-full max-w-xs transform translate-x-4 transition-transform group-hover:-translate-y-1 duration-500 delay-100">
+                  <div className="flex items-center gap-2 mb-2">
+                    <div className="w-2 h-2 rounded-full bg-blue-400 shadow-[0_0_10px_rgba(59,130,246,0.8)] animate-pulse"></div>
+                    <span className="text-white text-xs font-medium">v2.0 Update</span>
+                  </div>
+                  <p className="text-blue-200/70 text-[10px]">Added Edge caching, SSO, and real-time sync.</p>
+                </div>
+             </div>
+          </div>
+
+        </div>
+
       </main>
+
+      {/* Security Section */}
+      <section className="relative max-w-5xl mx-auto my-24 border border-[#1c1c1c] bg-[#0a0a0a] shadow-2xl">
+        {/* Header */}
+        <div className="p-8 md:p-12 border-b border-[#1c1c1c]">
+          <h2 className="text-2xl md:text-3xl font-medium text-white tracking-tight max-w-3xl leading-snug">
+            Secure by design. <span className="text-zinc-500">No compromises on performance. Your infrastructure is fortified from day one.</span>
+          </h2>
+        </div>
+        
+        {/* 2x2 Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2">
+          
+          {/* Cell 1 */}
+          <div className="p-8 md:p-10 border-b md:border-r border-[#1c1c1c] relative overflow-hidden min-h-[250px] flex flex-col group">
+            <h3 className="text-white font-medium mb-2 relative z-10">Zero-downtime deployments</h3>
+            <p className="text-zinc-500 text-sm relative z-10">Seamless updates without interrupting your users. Traffic is routed instantly.</p>
+            
+            <div className="mt-auto pt-12 relative z-0">
+              <svg width="100%" height="60" className="text-zinc-600 group-hover:text-zinc-400 transition-colors duration-500">
+                <defs>
+                  <pattern id="dots1" x="0" y="0" width="6" height="6" patternUnits="userSpaceOnUse">
+                    <circle cx="1" cy="1" r="1" fill="currentColor" />
+                  </pattern>
+                  <mask id="blocks-mask">
+                    <rect x="0" y="10" width="80" height="40" rx="4" fill="white" />
+                    <rect x="100" y="10" width="80" height="40" rx="4" fill="white" opacity="0.2" />
+                  </mask>
+                </defs>
+                <rect x="0" y="0" width="100%" height="100%" fill="url(#dots1)" mask="url(#blocks-mask)" />
+              </svg>
+            </div>
+          </div>
+
+          {/* Cell 2 */}
+          <div className="p-8 md:p-10 border-b border-[#1c1c1c] relative overflow-hidden min-h-[250px] flex flex-col group">
+            <h3 className="text-white font-medium mb-2 relative z-10">DDoS Protection</h3>
+            <p className="text-zinc-500 text-sm relative z-10">Enterprise-grade mitigation at the network edge to keep you online.</p>
+            
+            <div className="mt-auto pt-12 relative z-0">
+              <svg width="100%" height="60" className="text-zinc-600 group-hover:text-zinc-400 transition-colors duration-500">
+                <defs>
+                  <pattern id="dots2" x="0" y="0" width="6" height="6" patternUnits="userSpaceOnUse">
+                    <circle cx="1" cy="1" r="1" fill="currentColor" />
+                  </pattern>
+                  <mask id="wave-mask">
+                    <rect x="0" y="25" width="6" height="10" rx="3" fill="white" opacity="0.3" />
+                    <rect x="12" y="15" width="6" height="30" rx="3" fill="white" opacity="0.5" />
+                    <rect x="24" y="5" width="6" height="50" rx="3" fill="white" opacity="0.8" />
+                    <rect x="36" y="20" width="6" height="20" rx="3" fill="white" opacity="0.4" />
+                    <rect x="48" y="10" width="6" height="40" rx="3" fill="white" opacity="0.7" />
+                    <rect x="60" y="25" width="6" height="10" rx="3" fill="white" opacity="0.3" />
+                    <rect x="72" y="15" width="6" height="30" rx="3" fill="white" opacity="0.5" />
+                  </mask>
+                </defs>
+                <rect x="0" y="0" width="100%" height="100%" fill="url(#dots2)" mask="url(#wave-mask)" />
+              </svg>
+            </div>
+          </div>
+
+          {/* Cell 3 */}
+          <div className="p-8 md:p-10 md:border-r border-[#1c1c1c] relative overflow-hidden min-h-[250px] flex flex-col group">
+            <h3 className="text-white font-medium mb-2 relative z-10">End-to-end encrypted</h3>
+            <p className="text-zinc-500 text-sm relative z-10">AES-256-GCM and RSA-4096 protect your data in transit and at rest.</p>
+            
+            <div className="mt-auto pt-12 relative z-0">
+              <svg width="100%" height="60" className="text-zinc-600 group-hover:text-zinc-400 transition-colors duration-500">
+                <defs>
+                  <pattern id="dots3" x="0" y="0" width="6" height="6" patternUnits="userSpaceOnUse">
+                    <circle cx="1" cy="1" r="1" fill="currentColor" />
+                  </pattern>
+                  <mask id="lock-mask">
+                    <rect x="10" y="25" width="40" height="30" rx="4" fill="white" />
+                    <path d="M 18 25 V 15 A 12 12 0 0 1 42 15 V 25" fill="none" stroke="white" strokeWidth="6" strokeLinecap="round" />
+                  </mask>
+                </defs>
+                <rect x="0" y="0" width="100%" height="100%" fill="url(#dots3)" mask="url(#lock-mask)" />
+              </svg>
+            </div>
+          </div>
+
+          {/* Cell 4 */}
+          <div className="p-8 md:p-10 relative overflow-hidden min-h-[250px] flex flex-col group">
+            <h3 className="text-white font-medium mb-2 relative z-10">Compliance Ready</h3>
+            <p className="text-zinc-500 text-sm relative z-10">Architecture designed to meet GDPR, HIPAA, and SOC2 standards.</p>
+            
+            <div className="mt-auto pt-12 relative z-0">
+              <svg width="100%" height="60" className="text-zinc-600 group-hover:text-zinc-400 transition-colors duration-500">
+                <defs>
+                  <pattern id="dots4" x="0" y="0" width="6" height="6" patternUnits="userSpaceOnUse">
+                    <circle cx="1" cy="1" r="1" fill="currentColor" />
+                  </pattern>
+                  <mask id="shield-mask">
+                    <path d="M 30 5 L 55 12 V 30 C 55 45 30 55 30 55 C 30 55 5 45 5 30 V 12 Z" fill="white" />
+                  </mask>
+                </defs>
+                <rect x="0" y="0" width="100%" height="100%" fill="url(#dots4)" mask="url(#shield-mask)" />
+              </svg>
+            </div>
+          </div>
+
+        </div>
+      </section>
     </div>
   );
 }
