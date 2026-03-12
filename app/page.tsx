@@ -2,6 +2,7 @@ import React from 'react';
 import { Sparkles, ArrowRight, Zap, Search, LayoutGrid, ChevronLeft, ChevronRight, Code, Shield, Globe, Cpu, Wifi, SlidersHorizontal } from 'lucide-react';
 import Image from 'next/image';
 import AsciiArt from '@/components/AsciiArt';
+import AnimatedProcessSteps from '@/components/AnimatedProcessSteps';
 
 export default function Page() {
   return (
@@ -295,24 +296,7 @@ export default function Page() {
             </div>
             
             <div className="mt-auto relative z-10">
-              <div className="flex flex-col gap-4 mt-4">
-                <div className="flex items-center gap-4 text-sm">
-                  <div className="w-8 h-8 rounded-full bg-[#111] border border-[#222] flex items-center justify-center text-zinc-500 font-mono text-xs">01</div>
-                  <span className="text-zinc-300 font-medium">Discovery & Strategy</span>
-                </div>
-                <div className="flex items-center gap-4 text-sm">
-                  <div className="w-8 h-8 rounded-full bg-[#111] border border-[#222] flex items-center justify-center text-zinc-500 font-mono text-xs">02</div>
-                  <span className="text-zinc-300 font-medium">UI/UX Design</span>
-                </div>
-                <div className="flex items-center gap-4 text-sm">
-                  <div className="w-8 h-8 rounded-full bg-[#111] border border-[#222] flex items-center justify-center text-zinc-500 font-mono text-xs">03</div>
-                  <span className="text-zinc-300 font-medium">Development & Testing</span>
-                </div>
-                <div className="flex items-center gap-4 text-sm">
-                  <div className="w-8 h-8 rounded-full bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-500 font-mono text-xs">04</div>
-                  <span className="text-white font-medium">Deployment & Scaling</span>
-                </div>
-              </div>
+              <AnimatedProcessSteps />
             </div>
           </div>
 
