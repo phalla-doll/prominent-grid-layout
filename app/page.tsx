@@ -1,5 +1,5 @@
 import React from 'react';
-import { Sparkles, ArrowRight, Zap, Search, LayoutGrid, ChevronLeft, ChevronRight, Code, Shield, Globe, Cpu } from 'lucide-react';
+import { Sparkles, ArrowRight, Zap, Search, LayoutGrid, ChevronLeft, ChevronRight, Code, Shield, Globe, Cpu, ChevronDown, Wifi, SlidersHorizontal } from 'lucide-react';
 import Image from 'next/image';
 
 export default function Page() {
@@ -22,25 +22,105 @@ export default function Page() {
       {/* Main Grid Container */}
       <main className="relative max-w-5xl mx-auto border-x border-[#1c1c1c] bg-[#0a0a0a] min-h-screen shadow-2xl">
         
+        {/* Navbar */}
+        <nav className="flex items-center justify-between px-6 py-4 border-b border-[#1c1c1c] text-sm relative z-20">
+          <div className="flex items-center gap-2 font-medium text-white text-lg tracking-tight">
+            <div className="w-5 h-5 bg-emerald-500 rounded-md flex items-center justify-center">
+              <div className="w-2 h-2 bg-black rounded-sm"></div>
+            </div>
+            Mantha
+          </div>
+          <div className="hidden md:flex items-center gap-8 text-zinc-400 text-xs font-medium">
+            <a href="#" className="text-white">Home</a>
+            <a href="#" className="hover:text-white transition-colors">Services</a>
+            <a href="#" className="hover:text-white transition-colors">Work</a>
+          </div>
+          <div className="flex items-center gap-4">
+            <div className="hidden md:flex items-center gap-1.5 text-zinc-400 text-xs font-medium">
+              <Globe className="w-3.5 h-3.5" /> English
+            </div>
+            <button className="px-4 py-1.5 rounded-full border border-[#333] text-white hover:bg-[#111] transition-colors text-xs font-medium">Book a call</button>
+            <div className="flex">
+              <button className="px-4 py-1.5 rounded-l-full bg-[#222] text-white hover:bg-[#333] transition-colors text-xs font-medium">Start Project</button>
+              <button className="px-2 py-1.5 rounded-r-full bg-[#222] border-l border-[#333] text-white hover:bg-[#333] transition-colors">
+                <ChevronDown className="w-3.5 h-3.5" />
+              </button>
+            </div>
+          </div>
+        </nav>
+
+        {/* True Hero Section */}
+        <div className="pt-24 pb-20 px-6 flex flex-col items-center text-center relative z-10">
+          <h1 className="text-4xl md:text-6xl lg:text-[64px] font-medium tracking-tight text-white max-w-3xl leading-[1.05] mb-6">
+            Web development agency<br/>that scales your business
+          </h1>
+          <p className="text-zinc-400 text-base md:text-lg max-w-2xl mb-8 leading-relaxed">
+            Get enterprise-grade web applications delivered in record time. Mantha Studio combines strategic design with robust engineering.
+          </p>
+          <div className="flex items-center gap-2 text-[11px] text-zinc-500 mb-10 font-medium">
+            Backed by <div className="w-4 h-4 bg-[#ff6600] text-white flex items-center justify-center font-bold rounded-sm text-[10px]">Y</div> Combinator
+          </div>
+          <div className="flex items-center gap-4">
+            <button className="px-6 py-2.5 rounded-full border border-[#333] text-white hover:bg-[#111] transition-colors text-sm font-medium">Book a call</button>
+            <div className="flex">
+              <button className="px-6 py-2.5 rounded-l-full bg-[#222] text-white hover:bg-[#333] transition-colors text-sm font-medium">View Portfolio</button>
+              <button className="px-3 py-2.5 rounded-r-full bg-[#222] border-l border-[#333] text-white hover:bg-[#333] transition-colors">
+                <ChevronDown className="w-4 h-4" />
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/* Hero Image (Mac OS Window) */}
+        <div className="px-0 border-b border-[#1c1c1c]">
+          <div className="relative w-full aspect-[21/9] bg-zinc-900 overflow-hidden">
+            {/* Mac Menu Bar */}
+            <div className="absolute top-0 left-0 w-full h-7 bg-[#e5d5c1]/90 backdrop-blur-md z-20 flex items-center justify-between px-4 text-black text-[11px] font-medium">
+              <div className="flex items-center gap-4">
+                <div className="font-bold text-sm"></div>
+                <span className="font-bold">Mantha</span>
+                <span className="hidden sm:inline">File</span>
+                <span className="hidden sm:inline">Edit</span>
+                <span className="hidden sm:inline">View</span>
+                <span className="hidden sm:inline">Window</span>
+                <span className="hidden sm:inline">Help</span>
+              </div>
+              <div className="flex items-center gap-4">
+                <Wifi className="w-3 h-3" />
+                <Search className="w-3 h-3" />
+                <SlidersHorizontal className="w-3 h-3" />
+                <span>Thu Feb 19 9:20 PM</span>
+              </div>
+            </div>
+            
+            {/* Image with dotted overlay */}
+            <Image 
+              src="https://picsum.photos/seed/landscape3/1200/600" 
+              alt="Desktop Wallpaper" 
+              fill
+              className="object-cover"
+            />
+            <div className="absolute inset-0" style={{
+              backgroundImage: 'radial-gradient(circle at 1px 1px, rgba(0,0,0,0.4) 1px, transparent 0)',
+              backgroundSize: '3px 3px'
+            }}></div>
+          </div>
+        </div>
+
         {/* Header Row 1 */}
         <div className="flex justify-between items-center px-6 py-4 border-b border-[#1c1c1c] font-mono text-[10px] tracking-[0.2em] text-zinc-500 uppercase">
           <span>[01] Mantha Studio</span>
           <span>/ Expertise</span>
         </div>
 
-        {/* Hero Row */}
-        <div className="px-6 py-24 md:py-32 border-b border-[#1c1c1c] flex flex-col justify-center items-center text-center relative overflow-hidden">
+        {/* Sub-Hero Row */}
+        <div className="px-6 py-20 md:py-28 border-b border-[#1c1c1c] flex flex-col justify-center items-center text-center relative overflow-hidden">
           {/* Subtle background glow */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 bg-emerald-900/20 blur-[120px] rounded-full pointer-events-none"></div>
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 bg-emerald-900/10 blur-[120px] rounded-full pointer-events-none"></div>
           
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#111] border border-[#222] text-xs font-mono text-zinc-400 mb-8 relative z-10">
-            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-            Available for new projects
-          </div>
-
-          <h1 className="text-3xl md:text-5xl lg:text-[56px] font-medium tracking-tight text-white max-w-4xl leading-[1.1] relative z-10">
+          <h2 className="text-3xl md:text-4xl lg:text-[44px] font-medium tracking-tight text-white max-w-3xl leading-[1.15] relative z-10">
             We build <span className="font-serif italic font-normal text-zinc-300">digital experiences</span> that scale. From design to deployment.
-          </h1>
+          </h2>
         </div>
 
         {/* Bento Grid Row 1 */}
