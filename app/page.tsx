@@ -364,17 +364,17 @@ export default function Page() {
           </div>
 
           {/* Cell 8 */}
-          <div className="relative min-h-[400px] overflow-hidden group bg-[#050a15] flex items-center justify-center">
-             {/* Blue dotted pattern */}
+          <div className="relative min-h-[400px] overflow-hidden group bg-[#0a0a0a] flex items-center justify-center">
+             {/* Zinc dotted pattern */}
              <div className="absolute inset-0" style={{
-                  backgroundImage: 'radial-gradient(circle at 1px 1px, rgba(59,130,246,0.2) 1px, transparent 0)',
+                  backgroundImage: 'radial-gradient(circle at 1px 1px, rgba(255,255,255,0.1) 1px, transparent 0)',
                   backgroundSize: '8px 8px'
                 }}></div>
              
              {/* Floating UI */}
              <div className="relative z-20 flex flex-col items-center gap-4 w-full px-8">
                 {/* Card 1 */}
-                <div className="bg-[#0a1128]/90 backdrop-blur-xl border border-blue-500/20 rounded-xl p-4 shadow-2xl w-full max-w-xs transform -translate-x-4 transition-transform group-hover:-translate-y-1 duration-500">
+                <div className="bg-[#111]/90 backdrop-blur-xl border border-zinc-500/20 rounded-xl p-4 shadow-2xl w-full max-w-xs transform -translate-x-4 transition-transform group-hover:-translate-y-1 duration-500">
                   <div className="flex items-center gap-2 mb-2">
                     <div className="w-2 h-2 rounded-full bg-zinc-500"></div>
                     <span className="text-zinc-300 text-xs font-medium">Initial Release</span>
@@ -383,21 +383,21 @@ export default function Page() {
                 </div>
                 
                 {/* Connector */}
-                <div className="flex flex-col items-center text-blue-400/60 text-[10px] font-mono">
-                  <div className="w-px h-6 bg-blue-500/30"></div>
-                  <div className="flex items-center gap-2 my-1 bg-blue-500/10 px-2 py-1 rounded-full border border-blue-500/20">
+                <div className="flex flex-col items-center text-zinc-400/60 text-[10px] font-mono">
+                  <div className="w-px h-6 bg-zinc-500/30"></div>
+                  <div className="flex items-center gap-2 my-1 bg-zinc-500/10 px-2 py-1 rounded-full border border-zinc-500/20">
                     <Zap className="w-3 h-3" /> Feature shipped
                   </div>
-                  <div className="w-px h-6 bg-blue-500/30"></div>
+                  <div className="w-px h-6 bg-zinc-500/30"></div>
                 </div>
                 
                 {/* Card 2 */}
-                <div className="bg-[#0a1128]/90 backdrop-blur-xl border border-blue-500/40 rounded-xl p-4 shadow-[0_0_30px_rgba(59,130,246,0.15)] w-full max-w-xs transform translate-x-4 transition-transform group-hover:-translate-y-1 duration-500 delay-100">
+                <div className="bg-[#111]/90 backdrop-blur-xl border border-zinc-500/40 rounded-xl p-4 shadow-[0_0_30px_rgba(255,255,255,0.05)] w-full max-w-xs transform translate-x-4 transition-transform group-hover:-translate-y-1 duration-500 delay-100">
                   <div className="flex items-center gap-2 mb-2">
-                    <div className="w-2 h-2 rounded-full bg-blue-400 shadow-[0_0_10px_rgba(59,130,246,0.8)] animate-pulse"></div>
+                    <div className="w-2 h-2 rounded-full bg-zinc-400 shadow-[0_0_10px_rgba(255,255,255,0.5)] animate-pulse"></div>
                     <span className="text-white text-xs font-medium">v2.0 Update</span>
                   </div>
-                  <p className="text-blue-200/70 text-[10px]">Added Edge caching, SSO, and real-time sync.</p>
+                  <p className="text-zinc-400 text-[10px]">Added Edge caching, SSO, and real-time sync.</p>
                 </div>
              </div>
           </div>
