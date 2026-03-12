@@ -9,7 +9,7 @@ export default function Logo({ className = "w-8 h-8" }: { className?: string }) 
           <path 
             d="M 36 76 H 20 V 20 L 56 56" 
             stroke="black" 
-            strokeWidth="24" 
+            strokeWidth="18" 
             strokeLinecap="round" 
             strokeLinejoin="round" 
           />
@@ -20,7 +20,7 @@ export default function Logo({ className = "w-8 h-8" }: { className?: string }) 
       <path 
         d="M 60 76 H 76 V 20 L 40 56" 
         stroke="currentColor" 
-        strokeWidth="16" 
+        strokeWidth="10" 
         strokeLinecap="round" 
         strokeLinejoin="round" 
         mask="url(#m-cutout)" 
@@ -30,7 +30,7 @@ export default function Logo({ className = "w-8 h-8" }: { className?: string }) 
       <path 
         d="M 36 76 H 20 V 20 L 56 56" 
         stroke="currentColor" 
-        strokeWidth="16" 
+        strokeWidth="10" 
         strokeLinecap="round" 
         strokeLinejoin="round" 
       />
