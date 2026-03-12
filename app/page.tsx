@@ -246,7 +246,7 @@ export default function Page() {
             </div>
             
             <div className="mt-auto relative z-10">
-              <div className="flex flex-col gap-4">
+              <div className="flex flex-col gap-4 mt-4">
                 <div className="flex items-center gap-4 text-sm">
                   <div className="w-8 h-8 rounded-full bg-[#111] border border-[#222] flex items-center justify-center text-zinc-500 font-mono text-xs">01</div>
                   <span className="text-zinc-300 font-medium">Discovery & Strategy</span>
