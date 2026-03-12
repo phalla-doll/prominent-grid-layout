@@ -1,5 +1,5 @@
 import React from 'react';
-import { Sparkles, ArrowRight, Zap, Search, LayoutGrid, ChevronLeft, ChevronRight, Code, Shield, Globe, Cpu, ChevronDown, Wifi, SlidersHorizontal } from 'lucide-react';
+import { Sparkles, ArrowRight, Zap, Search, LayoutGrid, ChevronLeft, ChevronRight, Code, Shield, Globe, Cpu, Wifi, SlidersHorizontal } from 'lucide-react';
 import Image from 'next/image';
 import AsciiArt from '@/components/AsciiArt';
 
@@ -24,7 +24,7 @@ export default function Page() {
       <main className="relative max-w-5xl mx-auto border-x border-[#1c1c1c] bg-[#0a0a0a] min-h-screen shadow-2xl">
         
         {/* Navbar */}
-        <nav className="flex items-center justify-between px-6 py-4 border-b border-[#1c1c1c] text-sm relative z-20">
+        <nav className="sticky top-0 flex items-center justify-between px-6 py-4 border-b border-[#1c1c1c] text-sm z-50 bg-[#0a0a0a]/90 backdrop-blur-md">
           <div className="flex items-center gap-2 font-medium text-white text-lg tracking-tight">
             <div className="w-5 h-5 bg-emerald-500 rounded-md flex items-center justify-center">
               <div className="w-2 h-2 bg-black rounded-sm"></div>
@@ -41,12 +41,7 @@ export default function Page() {
               <Globe className="w-3.5 h-3.5" /> English
             </div>
             <button className="hidden sm:block px-4 py-1.5 rounded-full border border-[#333] text-white hover:bg-[#111] transition-colors text-xs font-medium">Book a call</button>
-            <div className="flex">
-              <button className="px-4 py-1.5 rounded-l-full bg-[#222] text-white hover:bg-[#333] transition-colors text-xs font-medium">Start Project</button>
-              <button className="px-2 py-1.5 rounded-r-full bg-[#222] border-l border-[#333] text-white hover:bg-[#333] transition-colors">
-                <ChevronDown className="w-3.5 h-3.5" />
-              </button>
-            </div>
+            <button className="px-4 py-1.5 rounded-full bg-[#222] text-white hover:bg-[#333] transition-colors text-xs font-medium">Start Project</button>
           </div>
         </nav>
 
