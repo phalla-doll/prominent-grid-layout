@@ -73,7 +73,7 @@ export default function AsciiArt() {
   }, []);
 
   return (
-    <div ref={containerRef} className="absolute inset-0 pt-7 bg-[#050505] flex items-center justify-center overflow-hidden z-0">
+    <div ref={containerRef} className="absolute inset-0 bg-[#050505] flex items-center justify-center overflow-hidden z-0">
       <pre className="text-[10px] leading-[10px] font-mono text-zinc-600 select-none">
         {frame}
       </pre>

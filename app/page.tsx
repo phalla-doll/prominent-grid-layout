@@ -64,28 +64,9 @@ export default function Page() {
           </div>
         </div>
 
-        {/* Hero Image (Mac OS Window) */}
+        {/* Hero Image / ASCII Art */}
         <div className="px-0 border-b border-[#1c1c1c]">
           <div className="relative w-full aspect-[21/9] bg-zinc-900 overflow-hidden">
-            {/* Mac Menu Bar */}
-            <div className="absolute top-0 left-0 w-full h-7 bg-[#e5d5c1]/90 backdrop-blur-md z-20 flex items-center justify-between px-4 text-black text-[11px] font-medium">
-              <div className="flex items-center gap-4">
-                <div className="font-bold text-sm"></div>
-                <span className="font-bold">Mantha</span>
-                <span className="hidden sm:inline">File</span>
-                <span className="hidden sm:inline">Edit</span>
-                <span className="hidden sm:inline">View</span>
-                <span className="hidden sm:inline">Window</span>
-                <span className="hidden sm:inline">Help</span>
-              </div>
-              <div className="flex items-center gap-4">
-                <Wifi className="w-3 h-3" />
-                <Search className="w-3 h-3" />
-                <SlidersHorizontal className="w-3 h-3" />
-                <span>Thu Feb 19 9:20 PM</span>
-              </div>
-            </div>
-            
             {/* Live ASCII Art Animation */}
             <AsciiArt />
           </div>
