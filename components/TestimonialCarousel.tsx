@@ -48,14 +48,21 @@ export default function TestimonialCarousel() {
 
   const scroll = (direction: 'left' | 'right') => {
     if (scrollRef.current) {
-      const itemWidth = scrollRef.current.firstElementChild?.clientWidth || 0;
-      const scrollLeft = scrollRef.current.scrollLeft;
+      const container = scrollRef.current;
+      const itemWidth = container.firstElementChild?.clientWidth || 0;
+      const scrollLeft = container.scrollLeft;
+      const maxScroll = container.scrollWidth - container.clientWidth;
       
-      const scrollTo = direction === 'left' 
-        ? scrollLeft - itemWidth 
-        : scrollLeft + itemWidth;
+      let scrollTo = 0;
+      
+      if (direction === 'left') {
+        scrollTo = scrollLeft <= 0 ? maxScroll : scrollLeft - itemWidth;
+      } else {
+        // Use a 5px buffer to account for sub-pixel rendering differences
+        scrollTo = scrollLeft >= maxScroll - 5 ? 0 : scrollLeft + itemWidth;
+      }
         
-      scrollRef.current.scrollTo({ left: scrollTo, behavior: 'smooth' });
+      container.scrollTo({ left: scrollTo, behavior: 'smooth' });
     }
   };
 
