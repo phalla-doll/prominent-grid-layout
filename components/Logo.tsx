@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Logo({ className = "w-8 h-8" }: { className?: string }) {
+export default function Logo({ className = "w-6 h-6" }: { className?: string }) {
   return (
     <svg className={className} viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g clipPath="url(#formance_dark__clip0_2272_3068)">

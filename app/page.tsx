@@ -30,7 +30,7 @@ export default function Page() {
         {/* Navbar */}
         <nav className="sticky top-0 flex items-center justify-between px-6 py-4 border-b border-[#1c1c1c] text-sm z-50 bg-[#0a0a0a]/90 backdrop-blur-md">
           <div className="flex items-center gap-3 cursor-pointer">
-            <Logo className="w-8 h-8 text-white" />
+            <Logo className="w-6 h-6 text-white" />
             <span className="font-bold text-white text-lg tracking-tight">Mantha</span>
           </div>
           <div className="hidden md:flex items-center gap-8 text-zinc-400 text-xs font-medium">
@@ -708,7 +708,7 @@ export default function Page() {
         <footer className="border-t border-[#1c1c1c] flex flex-col relative z-10 bg-transparent">
           <div className="px-6 md:px-8 py-12 border-b border-[#1c1c1c] flex flex-col md:flex-row justify-between items-start gap-8">
             <div className="flex items-center gap-3">
-              <Logo className="w-10 h-10 text-zinc-500" />
+              <Logo className="w-8 h-8 text-zinc-500" />
               <span className="font-bold text-zinc-400 text-xl tracking-tight">Mantha</span>
             </div>
             <p className="text-zinc-500 text-xs leading-relaxed md:text-right">
